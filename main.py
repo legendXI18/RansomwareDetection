@@ -1,17 +1,18 @@
 import time
 import os
-
+#https://thepythoncorner.com/posts/2019-01-13-how-to-create-a-watchdog-in-python-to-look-for-filesystem-changes/
 from watchdog.observers import Observer
 from watchdog.events import PatternMatchingEventHandler
 
 
 paths = []
+canaryNames = {}
 
 #start
 while True:
     try:
-        path = str(input("please Enter a Path for monitoring: "))
-        print(os.path.exists(path))
+        path = str(input("Please Enter a Path for monitoring: "))
+      #  print(os.path.exists(path))
 
         if path == "exit":
             print("exiting Program")
@@ -22,31 +23,36 @@ while True:
 
         if not os.path.exists(path):
             print("Please enter a VALID Path")
-
-        print("Path has been added")
-        paths.append(path)
+        else:
+            print("Path has been added")
+            paths.append(path)
     except ValueError:
         raise ValueError("please enter a valid Path")
         # better try again... Return to the start of the loop
         continue
 
 
-#paths = ["K:/me", "J:/test"]
 
 # Empty list of observers
 observers = []
 canaryFileCount = 0
 my_observer = Observer()
 
+def format_Path(path):
+
+    return "\\".join(path.split("\\")[:-1])
+
 def on_created(event):
     print(f"{event.src_path} has been created!")
 
 def on_deleted(event):
-    print(f"Someone deleted {event.src_path}!")
+    print(f"removing observer {event.src_path}!")
+    print(canaryNames.get(format_Path(event.src_path)))
+    my_observer.unschedule(canaryNames.get(format_Path(event.src_path)))
 
 def on_modified(event):
     print(f" {event.src_path} has been modified - Calculating entropy")
-    os.get
+
 def on_moved(event):
     print(f"moved {event.src_path} to {event.dest_path}")
 
@@ -65,11 +71,15 @@ if __name__ == "__main__":
     my_event_handler.on_moved = on_moved
 
     go_recursively = False
+    # paths = ["K:/me", "J:/test"]
 
     for line in paths:
         my_observer.schedule(my_event_handler, line)
-        observers.append(my_observer)
+        x = my_observer.schedule(my_event_handler, line)
+        print(x)
+        canaryNames[line] = x
 
+    print(canaryNames)
     my_observer.start()
     try:
         while True:
