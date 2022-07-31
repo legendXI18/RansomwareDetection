@@ -1,5 +1,10 @@
+
 import time
-import os
+import os,random
+import pyminizip
+import psutil
+
+
 #https://thepythoncorner.com/posts/2019-01-13-how-to-create-a-watchdog-in-python-to-look-for-filesystem-changes/
 from watchdog.observers import Observer
 from watchdog.events import PatternMatchingEventHandler
@@ -8,12 +13,14 @@ from watchdog.events import PatternMatchingEventHandler
 paths = []
 canaryNames = {}
 
+password = "default"
+
 #start
 while True:
     try:
         path = str(input("Please Enter a Path for monitoring: "))
       #  print(os.path.exists(path))
-
+        print(random.choice(os.listdir("C:\\")))
         if path == "exit":
             print("exiting Program")
             quit()
@@ -28,8 +35,11 @@ while True:
             paths.append(path)
     except ValueError:
         raise ValueError("please enter a valid Path")
-        # better try again... Return to the start of the loop
+
         continue
+
+
+
 
 
 
@@ -37,6 +47,29 @@ while True:
 observers = []
 canaryFileCount = 0
 my_observer = Observer()
+
+
+def check_process(filename):
+    for proc in psutil.process_iter():
+        try:
+            # this returns the list of opened files by the current process
+            flist = proc.open_files()
+            if flist:
+                print(proc.pid, proc.name)
+                for nt in flist:
+                    print("\t", nt.path)
+
+        # This catches a race condition where a process ends
+        # before we can examine its files
+        except psutil.NoSuchProcess as err:
+            print("****", err)
+        except psutil.AccessDenied:
+            continue
+def check_extentions(file_Ext):
+    if file_Ext in open('C:/Users/warri/PycharmProjects/learnPython/known_extensions', encoding="utf8").read():
+        print('ransomware detected')
+    else:
+        print('not malicous')
 
 def format_Path(path):
 
@@ -48,13 +81,37 @@ def on_created(event):
 def on_deleted(event):
     print(f"removing observer {event.src_path}!")
     print(canaryNames.get(format_Path(event.src_path)))
-    my_observer.unschedule(canaryNames.get(format_Path(event.src_path)))
+  #  my_observer.unschedule(canaryNames.get(format_Path(event.src_path)))
 
 def on_modified(event):
     print(f" {event.src_path} has been modified - Calculating entropy")
-
+   # check_process(event.src_path)
+    file = os.path.splitext(event.src_path)
+    file_extension = file[1]
+    print("ext: " + file_extension)
+    #output_key("bob")
+    check_extentions(file_extension)
 def on_moved(event):
     print(f"moved {event.src_path} to {event.dest_path}")
+    file =  os.path.splitext(event.dest_path)
+    file_extension = file[1]
+    print("ext: " + file_extension)
+    check_extentions(file_extension)
+
+def output_key(extractedKey):
+    f = open("key.txt", "w+")
+    f.write(extractedKey)
+    f.close()
+    #input
+    input = "./key.txt"
+
+    #output
+    output = "./output.zip"
+    # compress level
+    com_lvl = 5
+    # compressing file
+    pyminizip.compress(input, None, output,
+                       password, com_lvl)
 
 
 if __name__ == "__main__":
@@ -96,3 +153,5 @@ if __name__ == "__main__":
     for o in observer:
         # Wait until the thread terminates before exit
         o.join()
+
+
