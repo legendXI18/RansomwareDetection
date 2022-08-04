@@ -39,10 +39,6 @@ while True:
         continue
 
 
-
-
-
-
 # Empty list of observers
 observers = []
 canaryFileCount = 0
@@ -66,10 +62,13 @@ def check_process(filename):
         except psutil.AccessDenied:
             continue
 def check_extentions(file_Ext):
-    if file_Ext in open('C:/Users/warri/PycharmProjects/learnPython/known_extensions', encoding="utf8").read():
+    if file_Ext in open('known_extensions', encoding="utf8").read():
         print('ransomware detected')
+        print('Hibernating PC')
+        os.system("shutdown /h")
     else:
         print('not malicous')
+
 
 def format_Path(path):
 
@@ -85,17 +84,23 @@ def on_deleted(event):
 
 def on_modified(event):
     print(f" {event.src_path} has been modified - Calculating entropy")
-   # check_process(event.src_path)
+
+    #check_process(event.src_path)
+    # TODO - move duplicated logic into method
     file = os.path.splitext(event.src_path)
     file_extension = file[1]
     print("ext: " + file_extension)
     #output_key("bob")
     check_extentions(file_extension)
+
 def on_moved(event):
     print(f"moved {event.src_path} to {event.dest_path}")
+
+    #TODO - move duplicated logic into method
     file =  os.path.splitext(event.dest_path)
     file_extension = file[1]
     print("ext: " + file_extension)
+
     check_extentions(file_extension)
 
 def output_key(extractedKey):
