@@ -1,9 +1,8 @@
 
 import time
 import os,random
-import pyminizip
 import psutil
-
+import re
 
 #https://thepythoncorner.com/posts/2019-01-13-how-to-create-a-watchdog-in-python-to-look-for-filesystem-changes/
 from watchdog.observers import Observer
@@ -12,6 +11,7 @@ from watchdog.events import PatternMatchingEventHandler
 
 paths = []
 canaryNames = {}
+downloadPath = "K:\downloads"
 
 password = "default"
 
@@ -26,6 +26,8 @@ while True:
             quit()
 
         if path == "done":
+            print("added downloads")
+            paths.append(downloadPath)
             break
 
         if not os.path.exists(path):
@@ -39,35 +41,52 @@ while True:
         continue
 
 
+
 # Empty list of observers
 observers = []
 canaryFileCount = 0
 my_observer = Observer()
 
 
-def check_process(filename):
-    for proc in psutil.process_iter():
-        try:
-            # this returns the list of opened files by the current process
-            flist = proc.open_files()
-            if flist:
-                print(proc.pid, proc.name)
-                for nt in flist:
-                    print("\t", nt.path)
+# def check_process(filename):
+#     for proc in psutil.process_iter():
+#         try:
+#             # this returns the list of opened files by the current process
+#             flist = proc.open_files()
+#             if flist:
+#                 print(proc.pid, proc.name)
+#                 for nt in flist:
+#                     print("\t", nt.path)
+#
+#         # This catches a race condition where a process ends
+#         # before we can examine its files
+#         except psutil.NoSuchProcess as err:
+#             print("****", err)
+#         except psutil.AccessDenied:
+#             continue
 
-        # This catches a race condition where a process ends
-        # before we can examine its files
-        except psutil.NoSuchProcess as err:
-            print("****", err)
-        except psutil.AccessDenied:
-            continue
 def check_extentions(file_Ext):
-    if file_Ext in open('known_extensions', encoding="utf8").read():
-        print('ransomware detected')
-        print('Hibernating PC')
-        os.system("shutdown /h")
-    else:
-        print('not malicous')
+    if file_Ext != "":
+        split = file_Ext.split(".")
+        split = list(filter(None, split))
+        with open('known_extensions', encoding='utf8') as f: temp = f.read().splitlines()
+#todo Move logic outside this method to stop it being called every time ( only need it called once)
+        with open('known_extensions', encoding='utf8') as ke:
+            lines = ke.readlines()
+            known_extensions_split = [x for segments in temp for x in segments.split(".")]
+            known_extensions_split_set = set(known_extensions_split)
+
+            for extension in split:
+                if extension in known_extensions_split_set:
+                    print(extension)
+
+                    print('ransomware detected')
+                    print('Hibernating PC')
+               # os.system("shutdown /h")
+                else:
+                    print('not malicous')
+
+
 
 
 def format_Path(path):
@@ -93,6 +112,7 @@ def on_modified(event):
     #output_key("bob")
     check_extentions(file_extension)
 
+
 def on_moved(event):
     print(f"moved {event.src_path} to {event.dest_path}")
 
@@ -115,12 +135,11 @@ def output_key(extractedKey):
     # compress level
     com_lvl = 5
     # compressing file
-    pyminizip.compress(input, None, output,
-                       password, com_lvl)
+    #pyminizip.compress(input, None, output,
+    #                   password, com_lvl)
 
 
 if __name__ == "__main__":
-
 
     patterns = ["*"]
     ignore_patterns = None

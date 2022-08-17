@@ -954,7 +954,7 @@ Developing!
 *@pm.me*
 *.itunes
 *.rgnk
-*. tcwwasted
+*.tcwwasted
 *.tcwwasted
 *.ZaCaPa
 *.id-*[FileFixer@ProtonMail.com].LOCKED
@@ -1185,7 +1185,7 @@ Developing!
 *.Termite
 *.TellYouThePass
 *.Telecrypt
-*.Team XRat
+*.TeamXRat
 *.T1Happy
 *.SZFLocker
 *.SystemCrypter
@@ -1227,7 +1227,7 @@ Developing!
 *.Sadogo
 *.SadComputer
 *.SAD
-*.Russian EDA2
+*.RussianEDA2
 *.Russenger
 *.Ruby
 *.RSAUtil
@@ -1294,7 +1294,7 @@ Developing!
 *.PewCrypt
 *.Petna
 *.Pendor
-*.PEC 2017
+*.PEC2017
 *.PClock
 *.PaySafeGen
 *.PayPalGenerator2019
@@ -1427,7 +1427,7 @@ Developing!
 *.HydraCrypt
 *.Hydra
 *.Hucky
-*.HPE iLO
+*.HPEiLO
 *.HolyCrypt
 *.HollyCrypt
 *.HKCrypt
@@ -1453,7 +1453,7 @@ Developing!
 *.GoRansom
 *.Gomasom
 *.GoldenEye
-*.Golden Axe
+*.GoldenAxe
 *.GoGoogle
 *.Globe3
 *.GlobeImposter
@@ -1485,8 +1485,8 @@ Developing!
 *.Fadesoft
 *.Fabiansomware
 *.Extractor
-*.Extortion Scam
-*.Exocrypt XTC
+*.ExtortionScam
+*.ExocryptXTC
 *.ExecutionerPlus
 *.Everbe*
 *.Eternal
@@ -1494,12 +1494,12 @@ Developing!
 *.Erica
 *.Erebus
 *.EnkripsiPC
-*.Enjey Crypter
-*.Encryptor RaaS
+*.EnjeyCrypter
+*.EncryptorRaaS
 *.EncryptoJJS
 *.EncryptedBatch
 *.Enc1
-*.El Polocker
+*.ElPolocker
 *.EggLocker
 *.EduCrypt
 *.EdgeLocker
@@ -1514,7 +1514,7 @@ Developing!
 *.DoNotChange
 *.Done
 *.DoggeWiper
-*.DMA Locker*
+*.DMALocker*
 *.District
 *.Dishwasher
 *.DirtyDecrypt
@@ -1528,10 +1528,10 @@ Developing!
 *.DecryptIomega
 *.DeathRansom
 *.DeathNote
-*.DeathHiddenTear v2
+*.DeathHiddenTearv2
 *.DeathHiddenTear
 *.Deadly
-*.DCry 2.0
+*.DCry2.0
 *.Dcrtr
 *.DavesSmith
 *.DataKeeper
@@ -1540,17 +1540,17 @@ Developing!
 *.CXK-NMSL
 *.CTB-Locker
 *.CTB-Faker
-*.CSP Ransomware
+*.CSPRansomware
 *.Crystal
 *.CryPy
-*.CryptXXX 4.0
-*.CryptXXX 3.0
-*.CryptXXX 2.0
+*.CryptXXX4.0
+*.CryptXXX3.0
+*.CryptXXX2.0
 *.CryptXXX
 *.CryptoWire
-*.CryptoWall 4.0
-*.CryptoWall 3.0
-*.CryptoWall 2.0
+*.CryptoWall4.0
+*.CryptoWall3.0
+*.CryptoWall2.0
 *.CryptoViki
 *.CryptoTorLocker
 *.CryptoShocker
@@ -1558,8 +1558,8 @@ Developing!
 *.CryptorBit
 *.CryptoPokemon
 *.CryptoPatronum
-*.CryptoMix Wallet
-*.CryptoMix Revenge
+*.CryptoMixWallet
+*.CryptoMixRevenge
 *.CryptoMix
 *.CryptoLuck
 *.CryptoLocky
@@ -1592,10 +1592,10 @@ Developing!
 *.Cossy
 *.CorruptCrypt
 *.CoronaVirus
-*.Comrade Circle
+*.ComradeCircle
 *.Clouded
 *.CoinVault
-*.Coin Locker
+*.CoinLocker
 *.CockBlocker
 *.CmdRansomware
 *.ClicoCrypter
@@ -1610,31 +1610,31 @@ Developing!
 *.Bucbi
 *.Bubble
 *.BTCamant
-*.Brazilian Ransomware
+*.BrazilianRansomware
 *.Booyah
 *.BoooamCrypt
-*.Blue Blackmail
+*.BlueBlackmail
 *.Blooper
 *.BlockFile12
-*.Blind 2
+*.Blind2
 *.Blackout
 *.BlackKingdom
 *.BlackHeart
-*.Black Shades
-*.Black Feather
+*.BlackShades
+*.BlackFeather
 *.BKRansomware
 *.Bitshifter
 *.BitPyLock
 *.Bitpaymer
 *.BitCryptor
-*.BitCrypt 2.0
+*.BitCrypt2.0
 *.BitCrypt
 *.Bisquilla
 *.BigBobRoss
 *.BetaSup
-*.BB Ransomware
-*.Basilisque Locker
-*.Bart v2.0
+*.BBRansomware
+*.BasilisqueLocker
+*.Bartv2.0
 *.BandarChor
 *.BadRabbit
 *.BadEncript
@@ -1660,23 +1660,23 @@ Developing!
 *.AutoLocky
 *.Atchbo
 *.Ataware
-*.ASN1 Encoder
+*.ASN1Encoder
 *.Arsium
 *.ArmaLocky
 *.Argus
 *.AresCrypt
 *.ApolloLocker
 *.ApocalypseVM
-*.Apocalypse (New Variant)
+*.Apocalypse(NewVariant)
 *.Apocalypse
 *.Anubis
 *.AnteFrigus
-*.Annabelle 2.1
+*.Annabelle2.1
 *.AngryDuck
 *.Anatova
 *.Amnesia2
 *.Alpha
-*.Alma Locker
+*.AlmaLocker
 *.Alfa
 *.mzlq
 *.zeronine
@@ -1689,11 +1689,11 @@ Developing!
 *.AES-Matrix
 *.AES_KEY_GEN_ASSIST
 *.AdamLocker
-*.ACCDFISA v2.0
+*.ACCDFISAv2.0
 *.ABCLocker
 *.7ev3n
 *.HaCk
-*.24H Ransomware
+*.24HRansomware
 *.4rw5w
 *.0kilobypt
 *.vcrypt
@@ -1952,7 +1952,7 @@ Ransom*Software*.exe
 *.Mkos
 *.Cl0p
 *.c0hen
-*.happy new year
+*.happynewyear
 *.DMR
 *.somik1
 *.bablo
@@ -2150,7 +2150,7 @@ svchostt.exe
 *@files.mn*
 *structsstructs*
 structsstructs.exe
-FACT. 8-9-1278104.doc
+FACT.8-9-1278104.doc
 FA_HLEH3S83AO22WO.doc
 *.bora
 *.proced
@@ -2322,7 +2322,7 @@ SGUARD-README.TXT
 *.Qtyu8vH5wDXf6OSWAm5NuA==ObcK
 *.ObcKIn
 *.Lazarus
-. vesrato
+.vesrato
 *.masodas
 *.vesrato
 *.nuksus
@@ -2446,7 +2446,7 @@ x5gj5_gmG8.log
 *.budak
 *.Adame
 *.YOUR_LAST_CHANCE
-_RESTORE FILES_.txt
+_RESTOREFILES_.txt
 *.[Kromber@tutanota.com]
 *.SKYSTARS
 *.godes
@@ -2585,7 +2585,7 @@ READ_ME.mars
 *.hceem
 *.vally
 *.mars
-Instructions with your files.txt
+Instructionswithyourfiles.txt
 *.refols
 *.carcn
 *.yum
@@ -2606,7 +2606,7 @@ ReadME-Prodecryptor@gmail.com.txt
 *.qbix
 *.aa1
 *.zoro
-Инструкция по расшифровке.TXT
+Инструкцияпорасшифровке.TXT
 *.kes$
 *.condat
 *.dotmap
@@ -2736,7 +2736,7 @@ README-NOW.txt
 *.chech
 *.[mrpeterson@cock.li].GFS
 *.suffer
-*.инструкция по оплате.txt
+*.инструкцияпооплате.txt
 *.metan
 *.kezoz
 *.luces
@@ -2775,7 +2775,7 @@ Restore_ICPICP_Files.txt
 HOW-TO-RESTORE-FILES.txt
 !#_How_to_decrypt_files_$!.txt
 _如何解密我的文件_.txt
-How to decrypt.txt
+Howtodecrypt.txt
 *.[help24decrypt@cock.li
 *.Neptune
 *.{mattpear@protonmail.com}
@@ -2796,16 +2796,16 @@ How to decrypt.txt
 *.[help24decrypt@cock.li]
 *.promock
 *.promorad
-HOW TO DECRYPT[1T0tO].txt
-!_!email__ prusa@goat.si __!..PAYMAN
+HOWTODECRYPT[1T0tO].txt
+!_!email__prusa@goat.si__!..PAYMAN
 !SBLOCK_INFO!.rtf
 *.Frendi
-инструкция по оплате.txt
+инструкцияпооплате.txt
 how_to_recver_files.txt
 *.aqva
 !#_How_to_decrypt_files_#!
 SECURITY-ISSUE-INFO.txt
-! ПРОЧТИ МЕНЯ !.html
+!ПРОЧТИМЕНЯ!.html
 *.cammora
 *.SBLOCK
 *.promoz
@@ -2840,7 +2840,7 @@ ClopReadMe.txt
 *.amber
 !!!READ_IT!!!.txt
 Readme_Restore_Files.txt
-Your files are now encrypted.txt
+Yourfilesarenowencrypted.txt
 HOW_TO_DECRYPT_MY_FILES.txt
 *.snake4444
 *.[drwho888@mail.fr].888
@@ -2932,7 +2932,7 @@ CallOfCthulhu.exe
 .[ti_kozel@lashbania.tv].*
 #RECOVERY_FILES#.txt
 *id-.LyaS
-$%%! NOTE ABOUT FILES -=!-.html
+$%%!NOTEABOUTFILES-=!-.html
 *__{}.VACv2
 *.pdff
 *.djvuq
@@ -2976,7 +2976,7 @@ $%%! NOTE ABOUT FILES -=!-.html
 cmdRansomware.*
 #RECOVERY_FILES#.*
 *.decryptgarranty
-_How to restore files.*
+_Howtorestorefiles.*
 _How_To_Decrypt_My_File_.*
 *.lucky
 *.PERSONAL_ID*
@@ -2989,7 +2989,7 @@ _How_To_Decrypt_My_File_.*
 *.iaufhhhfiles_BACK_PLS_READ.html
 *.hilegofprencrp
 *.wowreadfordecry
-*.btc -help-you
+*.btc-help-you
 *.checkdiskenced
 *.iloveworld
 *.goforhelp
@@ -3009,7 +3009,7 @@ _How_To_Decrypt_My_File_.*
 *.lolita
 *snowpicnic*
 *SIMMYWARE*
-how to get back you files.txt
+howtogetbackyoufiles.txt
 *.cccmn
 aboutYourFiles.*
 *wall.i
@@ -3125,26 +3125,26 @@ HOW_DECRYPT_FILES#.html
 *.3RNu
 *.rpd
 *.[oron@india.com].dharma
-HOW TO RECOVER ENCRYPTED FILES-infovip@airmail.cc.TXT
+HOWTORECOVERENCRYPTEDFILES-infovip@airmail.cc.TXT
 READ_TO_DECRYPT.html
 *.[embrace@airmail.cc].embrace
 *[Beamsell@qq.com].bip
 *[files.restore@aol.com].write
 #NEWRAR_README#.rtf
-Files encrypted.html
+Filesencrypted.html
 *.backup
-*[java2018@tuta io].arrow
+*[java2018@tutaio].arrow
 !OoopsYourFilesLocked!.rtf
 *[RELOCK001@TUTA.IO]
 *.[btc@fros.cc].btc
-How To Restore Files.txt
+HowToRestoreFiles.txt
 *.bgtx
 Info.hta
-FILES ENCRYPTED.txt
+FILESENCRYPTED.txt
 *.DHDR4
 *.crypted_marztoneb@tutanota_de
 YOU_MUST_READ_ME.rtf
-*How to Decrypt Files-*.html
+*HowtoDecryptFiles-*.html
 *.BaLoZiN
 *.RJZUNA
 *@LOCKED
@@ -3197,7 +3197,7 @@ READ__IT.txt
 *.kvllyatprotonmaildotch
 *.KOK8
 *.fsdfsdfsdfsdfsdfsfdsfs
-How To Decode Files.hta
+HowToDecodeFiles.hta
 *.BadNews
 *.cassetto
 *.sophos
@@ -3208,7 +3208,7 @@ How To Decode Files.hta
 *.lockedfile
 *.WHY
 *.AlfaBlock
-# How to Decrypt Files.txt
+#HowtoDecryptFiles.txt
 *-Lock.onion
 *.PrOtOnIs.VaNdElIs
 *.PrOtOnIs
@@ -3335,7 +3335,7 @@ filesinfo.txt
 *.osk
 *.[pain@cock.lu].pain
 *.embrace
-Decoding help.hta
+Decodinghelp.hta
 *.karne
 *.setimichas1971@protonmail.com.b4wq
 *.decodeme666tutanota_com
@@ -3356,7 +3356,7 @@ Decoding help.hta
 *.UselessFiles
 *.GrAnoSinSa
 *.rand
-HOW DECRIPT FILES.hta
+HOWDECRIPTFILES.hta
 *.kcwenc
 *.mich
 *.OBLIVION
@@ -3426,7 +3426,7 @@ qwerty-pub.key
 *.YOU-ARE-FUCKED-BY-BALILUWARE-(CODED-BY-HEROPOINT)
 *.frmvrlr2017
 *.SUSPENDED
-Restore Files.TxT
+RestoreFiles.TxT
 *.ANNABELLE
 *.messenger-*
 *.[ID62133703]
@@ -3662,7 +3662,7 @@ READ_ME_FOR_DECRYPT_*.txt
 *.asasin
 *.BUGWARE
 *.SENRUS17
-!! RETURN FILES !!.txt
+!!RETURNFILES!!.txt
 *.loveransisgood
 *.PayDay
 *.allcry
@@ -3772,7 +3772,7 @@ diablo6-*.htm
 *.ACTUM
 *.OGONIA
 *.WAmarlocked
-!## DECRYPT FILES ##!.txt
+!##DECRYPTFILES##!.txt
 *.nopasaran
 *.gryphon
 ebay-msg.html
@@ -3797,8 +3797,8 @@ ebay_was_here
 RECOVER-FILES.html
 READ_ME_ASAP.txt
 _iWasHere.txt
-!!!SAVE YOUR FILES!.bmp
-!!!!!SAVE YOUR FILES!!!!.txt
+!!!SAVEYOURFILES!.bmp
+!!!!!SAVEYOURFILES!!!!.txt
 @decrypt_your_files.txt
 HowToDecryptIMPORTANT!.txt
 *.WINDOWS
@@ -3812,7 +3812,7 @@ HowToDecryptIMPORTANT!.txt
 *.fuck_you_av_we_are_not_globe_fake
 *.BRT92
 *.qwqd
-IF YOU WANT TO GET ALL YOUR FILES BACK, PLEASE READ THIS.TXT
+IFYOUWANTTOGETALLYOURFILESBACK,PLEASEREADTHIS.TXT
 *.TGIF
 *.snake
 *.MOLE03
@@ -3830,7 +3830,7 @@ IF YOU WANT TO GET ALL YOUR FILES BACK, PLEASE READ THIS.TXT
 *.ZAYKA
 *.NOOB
 *.crptd
-Instruction for file recovery.txt
+Instructionforfilerecovery.txt
 *.[mich78@usa.com]
 *.Reyptson
 *.explorer
@@ -3888,7 +3888,7 @@ File_Encryption_Notice.txt
 *.breeding123
 *.sux
 *.cfm
-*.Wana Decrypt0r Trojan-Syria Editi0n
+*.WanaDecrypt0rTrojan-SyriaEditi0n
 Paxynok.html
 *.pscrypt
 *.a990
@@ -3927,7 +3927,7 @@ IF_YOU_WANT_TO_GET_ALL_YOUR_FILES_BACK_PLEASE_READ_THIS.TXT
 *.TraNs
 #HOW_TO_UNRIP#.txt
 *.BeethoveN
-* .tdelf
+*.tdelf
 *.spectre
 mood-ravishing-hd-wallpaper-142943312215.jpg
 Blooper.exe
@@ -3935,7 +3935,7 @@ SintaLocker.exe
 SintaRun.py
 *.switch
 *.payforunlock
-HOW TO RECOVER ENCRYPTED FILES.TXT
+HOWTORECOVERENCRYPTEDFILES.TXT
 README_FOR_DECRYPT.txt
 *.dolphin
 *.dviide
@@ -3956,7 +3956,7 @@ READ_DECRYPT_FILES.txt
 *.andonio
 *.phantom
 *.r3store
-Read me for help thanks.txt
+Readmeforhelpthanks.txt
 *.imsorry
 help_to_decrypt.txt
 *.YYTO
@@ -4011,7 +4011,7 @@ how_to_back_files.html
 Galaperidol.exe
 HOW_CAN_I_DECRYPT_MY_FILES.txt
 *.xdata
-Hello There! Fellow @kee User!.txt
+HelloThere!Fellow@keeUser!.txt
 *.kee
 *.grux
 Restore_your_files.txt
@@ -4023,12 +4023,12 @@ READ_ME.html
 *.nuke55
 *.onyon
 *.blocked
-!Please Read Me!.txt
+!PleaseReadMe!.txt
 !WannaDecryptor!.exe.lnk
 *.DARKCRY
 *.wincry
 *.wncrypt
-WannaCrypt 4.0.exe
+WannaCrypt4.0.exe
 t.wry
 *.vCrypt1
 *.theva
@@ -4065,7 +4065,7 @@ loptr-*.htm
 *.wncry
 _!!!_README_!!!_*
 _!!!_README_!!!_*_.hta
-_!!!_README_!!!_*_ .txt
+_!!!_README_!!!_*_.txt
 *.news
 *.corrupted
 HOW_TO_DECRYPT_FILES.html
@@ -4076,7 +4076,7 @@ Cversions.2.db
 *.helppme@india.com.*
 ReadME_Decrypt_Help_*.html
 *.fartplz
-* .vCrypt1
+*.vCrypt1
 *.xncrypt
 *.Lockify
 *.htrs
@@ -4127,7 +4127,7 @@ ATLAS_FILES.txt
 READ_IT_FOR_GET_YOUR_FILE.txt
 *.psh
 *.GETREKT
-!!! READ THIS - IMPORTANT !!!.txt
+!!!READTHIS-IMPORTANT!!!.txt
 *.aes_ni_0day
 *.JEEPERS
 PAYMENT-INSTRUCTIONS.TXT
@@ -4145,7 +4145,7 @@ PAYMENT-INSTRUCTIONS.TXT
 *.lambda.l0cked
 009-READ-FOR-DECCCC-FILESSS.html
 _READ_THI$_FILE_*
-*.I'WANT MONEY
+*.I'WANTMONEY
 *.gembok
 !Decrypt-All-Files-*.txt
 *.[GOFMEN17@YA.RU],CRP
@@ -4162,15 +4162,15 @@ HUR_DEKRYPTERA_FILER.txt
 *.A95436@YA.RU
 *.IWANT
 *.Fuck_You
-Recupere seus arquivos aqui.txt
-READ TO UNLOCK FILES.salsa.*.html
+Recupereseusarquivosaqui.txt
+READTOUNLOCKFILES.salsa.*.html
 *.SALSA222
 *.NUMBERDOT
-How Decrypt My Files.lnk
+HowDecryptMyFiles.lnk
 How_Decrypt_My_Files
 *.CRADLE
 *.ID-7ES642406.CRY
-READ ME ABOUT DECRYPTION.txt
+READMEABOUTDECRYPTION.txt
 *.Do_not_change_the_file_name.cryp
 *.pr0tect
 *.android
@@ -4202,7 +4202,7 @@ Crytp0l0cker.exe
 decrypted_files.dat
 padcryptUninstaller.exe
 PadCrypt.exe
-Vape Launcher.exe
+VapeLauncher.exe
 READ_ME_!.txt
 *.enjey
 Aescrypt.exe
@@ -4234,7 +4234,7 @@ COMO_RESTAURAR_ARCHIVOS.html
 *.[File-Help@India.Com].mails
 damage@india.com*
 *.tmp.exe
-What happen to my files.txt
+Whathappentomyfiles.txt
 *.jeepdayz@india.com
 *.BarRax
 *.damage
@@ -4294,7 +4294,7 @@ _DECRYPT_INFO_szesnl.html
 *.CRYPTOSHIELD
 *.weareyourfriends
 MERRY_I_LOVE_YOU_BRUCE.hta
-How decrypt files.hta
+Howdecryptfiles.hta
 unCrypte@outlook.com*
 decipher_ne@outlook.com*
 *.potato
@@ -4331,7 +4331,7 @@ _HELP_Recover_Files_.html
 *.deria
 *.RMCM1
 *.Locked-by-Mafia
-*.кибер разветвитель
+*.киберразветвитель
 *-filesencrypted.html
 decrypt_Globe*.exe
 *.hnumkhotep
@@ -4364,15 +4364,15 @@ HOW_OPEN_FILES.hta
 *.gangbang
 GJENOPPRETTING_AV_FILER.html
 GJENOPPRETTING_AV_FILER.txt
-!!! HOW TO DECRYPT FILES !!!.txt
+!!!HOWTODECRYPTFILES!!!.txt
 *.braincrypt
-INSTRUCTION RESTORE FILE.TXT
+INSTRUCTIONRESTOREFILE.TXT
 *.lesli
-Survey Locker.exe
+SurveyLocker.exe
 !!!!!ATENÇÃO!!!!!.html
 Receipt.exe
 WindowsApplication1.exe
-HWID Lock.exe
+HWIDLock.exe
 VIP72.exe
 DALE_FILES.TXT
 *.DALE
@@ -4383,7 +4383,7 @@ HOW_TO_RESTORE_YOUR_DATA.html
 *.paymds
 RESTORE_CORUPTED_FILES.HTML
 READ@My.txt
-Cyber SpLiTTer Vbs.exe
+CyberSpLiTTerVbs.exe
 *.flyper
 000-PLEASE-READ-WE-HELP.html
 *.helpdecrypt@india.com
@@ -4419,14 +4419,14 @@ lblFinallyText.txt
 lblMain.txt
 *.hannah
 *.vindows
-How to decrypt your files.jpg
-How to decrypt your files.txt
-How to get data back.txt
+Howtodecryptyourfiles.jpg
+Howtodecryptyourfiles.txt
+Howtogetdataback.txt
 *.zycrypt
 *.sgood
 *.zzzzz
 xort.txt
-DOSYALARINIZA ULAŞMAK İÇİN AÇINIZ.html
+DOSYALARINIZAULAŞMAKİÇİNAÇINIZ.html
 HOWTO_RECOVER_FILES_*.TXT
 HELP_RESTORE_FILES_*.TXT
 Recovery+*.html
@@ -4442,25 +4442,25 @@ _HOW_TO_Decrypt.bmp
 _RECOVER_INSTRUCTIONS.ini
 ###-READ-FOR-HELLPP.html
 rtext.txt
-DECRYPTION INSTRUCTIONS.txt
-decrypt explanations.html
+DECRYPTIONINSTRUCTIONS.txt
+decryptexplanations.html
 _WHAT_is.html
 _HOWDO_text.html
 readme_liesmich_encryptor_raas.txt
 _Adatok_visszaallitasahoz_utasitasok.txt
-How to restore files.hta
+Howtorestorefiles.hta
 locked.bmp
 README_TO_RECURE_YOUR_FILES.txt
-Your files encrypted by our friends !!!.txt
+Yourfilesencryptedbyourfriends!!!.txt
 ATTENTION.url
 @WARNING_FILES_ARE_ENCRYPTED.*.txt
 README!!!.txt
-# README.hta
+#README.hta
 !Recovery_*.html
 YourID.txt
 recover.bmp
 recover.txt
-README HOW TO DECRYPT YOUR FILES.HTML
+READMEHOWTODECRYPTYOURFILES.HTML
 READ_IT.txt
 *.lock93
 *.!emc
@@ -4532,7 +4532,7 @@ _*_HOWDO_text.html
 *.zypto*
 zzzzzzzzzzzzzzzzzyyy
 zycrypt.*
-*decrypt your file*.*
+*decryptyourfile*.*
 *_nullbyte*
 *.bart
 *.axx
@@ -4543,10 +4543,10 @@ exit.hhr.obleep
 UnblockFiles.vbs
 README_DECRYPT_HYDRA_ID_*.txt
 DECRYPT_Readme.TXT.ReadMe
-Decrypt All Files *.bmp
+DecryptAllFiles*.bmp
 HowDecrypt.gif
 HELP_YOURFILES.HTML
-HOW TO DECRYPT FILES.HTML
+HOWTODECRYPTFILES.HTML
 BUYUNLOCKCODE
 BitCryptorFileList.txt
 *.crjocker
@@ -4573,7 +4573,7 @@ How_to_restore_files.hta
 *.fantom
 *.cerber2
 !readme.*
-Como descriptografar seus arquivos.txt
+Comodescriptografarseusarquivos.txt
 *.C0rp0r@c@0Xr@
 *.domino
 *cerber2
@@ -4587,12 +4587,12 @@ Read_this_file.txt
 *.7z.encrypted
 ATTENTION!!!.txt
 HELP_DECRYPT.lnk
-how to decrypt aes files.lnk
+howtodecryptaesfiles.lnk
 restore_files.txt
 HowDecrypt.txt
 $RECYCLE.BIN.{*-*-*-*}
 *.heisenberg
-*.breaking bad
+*.breakingbad
 *.razy
 *.Venusf
 .~
@@ -4607,7 +4607,7 @@ pronk.txt
 paycrypt.bmp
 maxcrypt.bmp
 how_decrypt.gif
-how to get data.txt
+howtogetdata.txt
 help_recover_instructions*.txt
 help_recover_instructions*.html
 help_recover_instructions*.bmp
@@ -4631,11 +4631,11 @@ _H_e_l_p_RECOVER_INSTRUCTIONS*.html
 _HELP_instructions.txt
 _HELP_instructions.bmp
 _DECRYPT_INFO_*.html
-Your files encrypted by our friends !!! txt
-Your files are locked !.txt
-Your files are locked !!.txt
-Your files are locked !!!.txt
-Your files are locked !!!!.txt
+Yourfilesencryptedbyourfriends!!!txt
+Yourfilesarelocked!.txt
+Yourfilesarelocked!!.txt
+Yourfilesarelocked!!!.txt
+Yourfilesarelocked!!!!.txt
 YOUR_FILES_ARE_LOCKED.txt
 YOUR_FILES_ARE_ENCRYPTED.TXT
 YOUR_FILES_ARE_ENCRYPTED.HTML
@@ -4644,7 +4644,7 @@ UNLOCK_FILES_INSTRUCTIONS.txt
 UNLOCK_FILES_INSTRUCTIONS.html
 SIFRE_COZME_TALIMATI.html
 SHTODELATVAM.txt
-Read Me (How Decrypt) !!!!.txt
+ReadMe(HowDecrypt)!!!!.txt
 RESTORE_FILES_*.txt
 RESTORE_FILES_*.*
 READ_THIS_TO_DECRYPT.html
@@ -4653,8 +4653,8 @@ README_HOW_TO_UNLOCK.HTML
 README_DECRYPT_UMBRE_ID_*.txt
 README_DECRYPT_UMBRE_ID_*.jpg
 README_DECRYPT_HYRDA_ID_*.txt
-READ ME FOR DECRYPT.txt
-READ IF YOU WANT YOUR FILES BACK.html
+READMEFORDECRYPT.txt
+READIFYOUWANTYOURFILESBACK.html
 Payment_Instructions.jpg
 ONTSLEUTELINGS_INSTRUCTIES.html
 OKSOWATHAPPENDTOYOURFILES.TXT
@@ -4666,11 +4666,11 @@ INSTRUCTIONS_DE_DECRYPTAGE.html
 INSTRUCCIONES_DESCIFRADO.html
 INSTALL_TOR.URL
 IMPORTANT.README
-IMPORTANT READ ME.txt
+IMPORTANTREADME.txt
 Howto_RESTORE_FILES.html
-How to decrypt your data.txt
-How to decrypt LeChiffre files.html
-Help Decrypt.html
+Howtodecryptyourdata.txt
+HowtodecryptLeChiffrefiles.html
+HelpDecrypt.html
 Hacked_Read_me_to_decrypt_files.html
 HOW_TO_UNLOCK_FILES_README_*.txt
 HOW_TO_RESTORE_FILES.html
@@ -4678,7 +4678,7 @@ HOW_DECRYPT.URL
 HOW_DECRYPT.TXT
 HOW_DECRYPT.HTML
 HOWTO_RECOVER_FILES_*.*
-HOW TO DECRYPT FILES.txt
+HOWTODECRYPTFILES.txt
 HELP_YOUR_FILES.html
 HELP_YOUR_FILES.PNG
 HELP_TO_SAVE_FILES.bmp
@@ -4687,7 +4687,7 @@ HELP_DECRYPT.URL
 HELP_DECRYPT.PNG
 HELP_DECRYPT.HTML
 GetYouFiles.txt
-File Decrypt Help.html
+FileDecryptHelp.html
 FILES_BACK.txt
 ENTSCHLUSSELN_HINWEISE.html
 DecryptAllFiles*.txt
@@ -4699,7 +4699,7 @@ DECRYPT_INSTRUCTIONS.html
 DECRYPT_INSTRUCTION.URL
 DECRYPT_INSTRUCTION.HTML
 DECRYPTION_HOWTO.Notepad
-Comment débloquer mes fichiers.txt
+Commentdébloquermesfichiers.txt
 BUYUNLOCKCODE.txt
 AllFilesAreLocked*.bmp
 4-14-2016-INFECTION.TXT
@@ -4735,9 +4735,9 @@ AllFilesAreLocked*.bmp
 *.How_To_Decrypt.txt
 *.Contact_Here_To_Recover_Your_Files.txt
 *.31392E30362E32303136_*
-# DECRYPT MY FILES #.vbs
-# DECRYPT MY FILES #.txt
-# DECRYPT MY FILES #.html
+#DECRYPTMYFILES#.vbs
+#DECRYPTMYFILES#.txt
+#DECRYPTMYFILES#.html
 !Where_are_my_files!.html
 !!!README!!!*.rtf
 !!!-WARNING-!!!.txt
@@ -4792,7 +4792,7 @@ _help_instruct*.*
 *_recover_*.*
 *+recover+*.*
 *warning-!!*.*
-*decrypt my file*.*
+*decryptmyfile*.*
 help_file_*.*
 recovery+*.*
 readme_for_decrypt*.*
@@ -4803,7 +4803,7 @@ howto_restore*.*
 how_to_recover*.*
 how_recover*.*
 how_to_decrypt*.*
-how to decrypt*.*
+howtodecrypt*.*
 help_restore*.*
 help_your_file*.*
 help_recover*.*
@@ -4914,7 +4914,7 @@ confirmation.key
 enc_files.txt
 last_chance.txt
 *.vault
-*want your files back.*
+*wantyourfilesback.*
 *.frtrss
 *.exx
 *.ezz
