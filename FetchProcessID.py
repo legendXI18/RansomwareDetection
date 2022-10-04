@@ -18,7 +18,7 @@ class FetchProcessID:
         # get all running processID
         output = output.split()
         list_all_processID = {int(x) for x in output if x.isdigit()}
-        print(list_all_processID)
+        #print(list_all_processID)
 
         return list_all_processID
 

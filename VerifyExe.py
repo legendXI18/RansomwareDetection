@@ -4,6 +4,7 @@ import time
 import os
 import psutil
 import hashlib
+import PEExtracter
 
 from vt import APIError
 
@@ -17,6 +18,8 @@ from FetchProcessID import FetchProcessID
 p = FetchProcessID()
 virusTotalAPI = Twython(config.api_key_VT)
 client = vt.Client(virusTotalAPI.app_key)
+processCurrentlyRunning = set()
+test = "hello"
 
 windows_services_parent_process = \
     {
@@ -34,15 +37,18 @@ windows_services_path = \
         "wininit.exe": "C:\\Windows\\System32\\wininit.exe",
         "explorer.exe": "C:\\Windows\\System32\\explorer.exe",
     }
-def get_info_file(hash):
 
+
+def get_info_file(hash):
     file = client.get_object("/files/" + str(hash))
     return file
 
+
 def scan_file(path):
-     with open(path, "rb") as f:
+    with open(path, "rb") as f:
         analysis = client.scan_file(f, wait_for_completion=True)
-     return analysis
+    return analysis
+
 
 def CheckRunningProcess():
     print(("calling setlist 1"))
@@ -101,9 +107,9 @@ def CheckRunningProcess():
     print("combined")
     print(combinedList)
 
+
 # checks the process parent
 def checkProcessParent(process):
-
     parentProcess = psutil.Process(process.ppid())
 
     if process.name() in windows_services_parent_process.keys():
@@ -119,17 +125,18 @@ def checkProcessParent(process):
         print(process.name() + " ignore process")
         # os.system("taskkill /im " + process.exe())
         return False
-def virusTotalVerification(process):
 
+
+def virusTotalVerification(process):
     try:
         report = get_info_file(checkHash(process.exe()))
         if report.reputation < 0:
             print("killing process and sleeping PC")
-            #kill the Process
-            #os.system("taskkill /im " + process.exe())
+            # kill the Process
+            # os.system("taskkill /im " + process.exe())
 
-            #hibrinate PC
-            #os.system("shutdown /h")
+            # hibrinate PC
+            # os.system("shutdown /h")
     except APIError as e:
         if e.code == "NotFoundError":
             try:
@@ -157,11 +164,35 @@ def checkProcessLocation(process):
 def checkHash(path):
     return hashlib.md5(open(path, 'rb').read()).hexdigest()
 
+def check_all_running_exes():
+
+    currentRunningProcesses = set()
+    if len(processCurrentlyRunning) == 0:
+        currentRunningProcesses = p.getCurrentRunningProcessID()
+    else:
+        currentRunningProcesses = p.getCurrentRunningProcessID().difference(currentRunningProcesses)
+    try:
+        print("checking running processes")
+
+        for proc in currentRunningProcesses:
+            try:
+                process = psutil.Process(proc)
+                results = PEExtracter.check_EXE_PE_Header(process.exe())
+                print(results)
+                if results == 1:
+                    print("malware detected - shutting down process")
+            except Exception as e:
+                print(e)
+    except Exception as e:
+        print(e)
+
 
 if __name__ == "__main__":
     # CheckRunningProcess()
-    schedule.every(10).seconds.do(CheckRunningProcess)
-
-    while True:
-        schedule.run_pending()
-        time.sleep(1)
+    check_all_running_exes()
+    print("rerun")
+   # schedule.every(10).seconds.do(CheckRunningProcess)
+   #  schedule.every(10).seconds.do(check_all_running_exes)
+   #  while True:
+   #      schedule.run_pending()
+   #      time.sleep(1)
