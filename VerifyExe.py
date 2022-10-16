@@ -28,7 +28,8 @@ windows_services_parent_process = \
         "services.exe": "wininit.exe",
         "lsass.exe": "wininit.exe",
         "taskhostw.exe": "svchost.exe",
-        "svchost.exe": "services.exe"
+        "svchost.exe": "services.exe",
+
     }
 windows_services_path = \
     {
@@ -64,12 +65,14 @@ def CheckRunningProcess():
     for proc in combinedList:
         running_exe_dict = {}
         try:
-            process = psutil.Process(proc)
-            parentProcess = psutil.Process(process.ppid())
 
-            checkProcessParent(process)
-            checkProcessParent(parentProcess)
+        # should check process location and then parent process, if parent process doesnt exists it throws exception and continues
+            process = psutil.Process(proc)
             checkProcessLocation(process)
+            checkProcessParent(process)
+
+            parentProcess = psutil.Process(process.ppid())
+            checkProcessParent(parentProcess)
             checkProcessLocation(parentProcess)
 
         # print("current process")
@@ -120,10 +123,10 @@ def checkProcessParent(process):
             return True
         else:
             print(process.name() + " parent is not verified")
-            virusTotalVerification(process)
+           #virusTotalVerification(process)
     else:
         print(process.name() + " ignore process")
-        # os.system("taskkill /im " + process.exe())
+        process.kill()
         return False
 
 
@@ -136,7 +139,7 @@ def virusTotalVerification(process):
             # os.system("taskkill /im " + process.exe())
 
             # hibrinate PC
-            # os.system("shutdown /h")
+            os.system("shutdown /h")
     except APIError as e:
         if e.code == "NotFoundError":
             try:
@@ -151,10 +154,11 @@ def checkProcessLocation(process):
             print("process location verified")
         else:
             print(process.exe() + " not verified")
+            process.kill()
     else:
         print("ignore location of " + process.name())
 
-    # by checking parent process - lets me find abnormal launches i.e. non windows
+    # by checking parent process - find abnormal launches i.e. non windows
     # todo:
     # store into dictionary the name of process and pid - only one instance of certain processes should exist wininit, system, services,isass etc
     #
@@ -181,6 +185,7 @@ def check_all_running_exes():
                 print(results)
                 if results == 1:
                     print("malware detected - shutting down process")
+                    os.system("shutdown /h")
             except Exception as e:
                 print(e)
     except Exception as e:
@@ -191,8 +196,8 @@ if __name__ == "__main__":
     # CheckRunningProcess()
     check_all_running_exes()
     print("rerun")
-   # schedule.every(10).seconds.do(CheckRunningProcess)
-   #  schedule.every(10).seconds.do(check_all_running_exes)
+   # schedule.every(0.1).seconds.do(CheckRunningProcess)
+   # schedule.every(1).seconds.do(check_all_running_exes)
    #  while True:
    #      schedule.run_pending()
    #      time.sleep(1)
