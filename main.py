@@ -12,7 +12,8 @@ from watchdog.events import PatternMatchingEventHandler
 paths = []
 canaryNames = {}
 downloadPath = "K:\downloads"
-
+global modification_Count
+modification_Count = 0
 password = "default"
 
 #start
@@ -86,6 +87,15 @@ def check_extentions(file_Ext):
                 else:
                     print('not malicous')
 
+def increment_counter():
+    modification_Count+=1
+
+    if modification_Count > 2:
+        print('Hibernating PC')
+        os.system("shutdown /h")
+
+
+
 
 
 
@@ -94,6 +104,7 @@ def format_Path(path):
     return "\\".join(path.split("\\")[:-1])
 
 def on_created(event):
+    increment_counter
     print(f"{event.src_path} has been created!")
 
 def on_deleted(event):
@@ -102,6 +113,7 @@ def on_deleted(event):
   #  my_observer.unschedule(canaryNames.get(format_Path(event.src_path)))
 
 def on_modified(event):
+    increment_counter
     print(f" {event.src_path} has been modified - Calculating entropy")
 
     #check_process(event.src_path)
@@ -114,6 +126,7 @@ def on_modified(event):
 
 
 def on_moved(event):
+    increment_counter
     print(f"moved {event.src_path} to {event.dest_path}")
 
     #TODO - move duplicated logic into method
